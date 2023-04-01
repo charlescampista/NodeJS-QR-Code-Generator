@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/qrcode", (req, res) => {
+  console.log(req);
   const { data, width = 300, height = 300 } = req.query;
 
   if (!data) {
